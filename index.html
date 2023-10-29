@@ -63,7 +63,7 @@
         1000
     )
 
-    camera.position.set(0.5, 5, 7)
+    camera.position.set(0, 5, 7)
     camera.lookAt(0, 0, 0);
 
     const renderer = new THREE.WebGLRenderer({
@@ -166,8 +166,6 @@
 
 
             this.position.set(position.x, position.y, position.z)
-
-            const slantHeight = Math.sqrt(Math.pow(this.radius, 2) + Math.pow(this.height, 2));
 
             this.right = this.position.x + this.radius;
             this.left = this.position.x - this.radius;
